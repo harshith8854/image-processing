@@ -1,3 +1,4 @@
+#basic thresholding 
 I = imread('WIN_20200808_10_49_13_Pro (2).jpg');
 p=rgb2gray(I);
 BW = imbinarize(p,0.5);

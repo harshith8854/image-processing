@@ -7,4 +7,7 @@ e=imerode(BW,se);
 d=imdilate(BW,see);
 o=imopen(BW,se);
 c=imclose(BW,se);
+bt=imbothat(BW,se);
+tt=imtophat(BW,se);
+bm=bwhitmiss(BW,se);
 imshow(o);

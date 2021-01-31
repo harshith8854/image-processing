@@ -1,0 +1,9 @@
+I = imread('WIN_20200808_10_49_13_Pro (2).jpg');
+p=rgb2gray(I);
+BW = imbinarize(p,0.4);
+se = strel('square',3);
+see = strel('square',3);
+e=imerode(BW,se);
+d=imdilate(BW,see);
+imshow(d);
+imshow(e);
